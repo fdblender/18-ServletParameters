@@ -16,7 +16,7 @@ public class Bhuser implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="BHUSER_BHUSERID_GENERATOR", sequenceName="BHUSER_SEQ")
+	@SequenceGenerator(name="BHUSER_BHUSERID_GENERATOR", sequenceName="BHUSER_SEQ1", allocationSize=1, initialValue=100)
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BHUSER_BHUSERID_GENERATOR")
 	private long bhuserid;
 
